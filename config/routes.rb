@@ -1,4 +1,13 @@
 Zaoke::Application.routes.draw do
+  resources :orders
+
+
+  resources :addresses
+
+
+  resources :products
+
+
   authenticated :user do
     root :to => 'home#index'
   end
